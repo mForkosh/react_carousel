@@ -52,7 +52,7 @@ class App extends React.Component<{}, State> {
           <input
             className="inputs"
             type="number"
-            placeholder="Размер в пикселях"
+            placeholder="Image size"
             onChange={e => {
               this.setState({ itemWidth: Number(e.target.value) });
             }}
@@ -60,7 +60,7 @@ class App extends React.Component<{}, State> {
           <input
             className="inputs"
             type="number"
-            placeholder="Количество картинок"
+            placeholder="Frame size"
             onChange={e => {
               this.setState({ frameSize: Number(e.target.value) });
             }}
@@ -68,7 +68,7 @@ class App extends React.Component<{}, State> {
           <input
             className="inputs"
             type="number"
-            placeholder="Шаг прокрутки"
+            placeholder="step"
             onChange={e => {
               this.setState({ step: Number(e.target.value) });
             }}
@@ -76,7 +76,7 @@ class App extends React.Component<{}, State> {
           <input
             className="inputs"
             type="number"
-            placeholder="Время анимации"
+            placeholder="Animation duration"
             onChange={e => {
               this.setState({ animationDuration: Number(e.target.value) });
             }}
